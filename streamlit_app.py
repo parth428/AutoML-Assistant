@@ -1,6 +1,15 @@
 # Parth Patel
 # Homework 1
 
+import subprocess
+import sys
+
+# list of required packages
+required = ["streamlit", "pandas", "numpy", "scikit-learn"]
+
+for pkg in required:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", pkg])
+
 from typing import List, Dict, Optional, Tuple
 import numpy as np
 import pandas as pd
