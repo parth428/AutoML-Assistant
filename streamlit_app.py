@@ -1,20 +1,10 @@
 # Parth Patel
 # Homework 1
 
-import subprocess
-import sys
-
-# list of required packages
-required = ["streamlit", "pandas", "numpy", "scikit-learn"]
-
-for pkg in required:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", pkg])
-
 from typing import List, Dict, Optional, Tuple
 import numpy as np
 import pandas as pd
 import streamlit as st
-
 
 from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
@@ -29,7 +19,6 @@ from sklearn.metrics import accuracy_score, f1_score, confusion_matrix, classifi
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
-
 
 # Page setup
 st.set_page_config(page_title="AutoML Assistant", page_icon="🤖", layout="wide")
